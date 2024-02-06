@@ -14,6 +14,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="TEST ATAN2 and joystick functions.vi" Type="VI" URL="../added/TEST ATAN2 and joystick functions.vi"/>
+		<Item Name="TEST optimize swerve.vi" Type="VI" URL="../TEST optimize swerve.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
@@ -23,6 +24,7 @@
 			<Item Name="RateLimiter.vi" Type="VI" URL="../added/RateLimiter.vi"/>
 			<Item Name="calc rect to polar.vi" Type="VI" URL="../calc rect to polar.vi"/>
 			<Item Name="calc polar to rect.vi" Type="VI" URL="../calc polar to rect.vi"/>
+			<Item Name="optimize swerve.vi" Type="VI" URL="../optimize swerve.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
