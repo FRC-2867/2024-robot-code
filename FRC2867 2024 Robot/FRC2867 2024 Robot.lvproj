@@ -110,8 +110,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
-			<Item Name="added" Type="Folder" URL="../added">
-				<Property Name="NI.DISK" Type="Bool">true</Property>
+			<Item Name="added" Type="Folder">
+				<Item Name="dead band filter.vi" Type="VI" URL="../added/dead band filter.vi"/>
+				<Item Name="RateLimiter.vi" Type="VI" URL="../added/RateLimiter.vi"/>
+				<Item Name="TEST ATAN2 and joystick functions.vi" Type="VI" URL="../added/TEST ATAN2 and joystick functions.vi"/>
+				<Item Name="Vector joystck.vi" Type="VI" URL="../added/Vector joystck.vi"/>
+				<Item Name="write driver inputs.vi" Type="VI" URL="../added/write driver inputs.vi"/>
 			</Item>
 			<Item Name="ctrl defs" Type="Folder">
 				<Item Name="ctrl CANcoder.ctl" Type="VI" URL="../ctrl defs/ctrl CANcoder.ctl"/>
@@ -123,9 +127,13 @@ AddOutputFilter chunkFilter
 				<Item Name="ctrl swerve motor.ctl" Type="VI" URL="../ctrl defs/ctrl swerve motor.ctl"/>
 				<Item Name="ctrl XY coord.ctl" Type="VI" URL="../ctrl defs/ctrl XY coord.ctl"/>
 			</Item>
+			<Item Name="globals" Type="Folder">
+				<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
+				<Item Name="Global odometry.vi" Type="VI" URL="../Global odometry.vi"/>
+				<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
+			</Item>
 			<Item Name="Initialize" Type="Folder">
 				<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
-				<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
 				<Item Name="INIT arms.vi" Type="VI" URL="../INIT arms.vi"/>
 				<Item Name="INIT controllers.vi" Type="VI" URL="../INIT controllers.vi"/>
 				<Item Name="INIT sensors.vi" Type="VI" URL="../INIT sensors.vi"/>
@@ -135,22 +143,21 @@ AddOutputFilter chunkFilter
 			<Item Name="swerve" Type="Folder">
 				<Item Name="calc CG.vi" Type="VI" URL="../calc CG.vi"/>
 				<Item Name="calc mods from center.vi" Type="VI" URL="../calc mods from center.vi"/>
+				<Item Name="calc polar to rect.vi" Type="VI" URL="../calc polar to rect.vi"/>
 				<Item Name="calc rect to polar.vi" Type="VI" URL="../calc rect to polar.vi"/>
 				<Item Name="calc swerve modules.vi" Type="VI" URL="../calc swerve modules.vi"/>
-				<Item Name="Untitled 2 (SubVI).vi" Type="VI" URL="../Untitled 2 (SubVI).vi"/>
+				<Item Name="change pivot.vi" Type="VI" URL="../change pivot.vi"/>
+				<Item Name="optimize swerve.vi" Type="VI" URL="../optimize swerve.vi"/>
+				<Item Name="steer motor.vi" Type="VI" URL="../added/steer motor.vi"/>
 			</Item>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
 			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
-			<Item Name="Global odometry.vi" Type="VI" URL="../Global odometry.vi"/>
 			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
-			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="calc polar to rect.vi" Type="VI" URL="../calc polar to rect.vi"/>
-		<Item Name="change pivot.vi" Type="VI" URL="../change pivot.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -316,7 +323,6 @@ AddOutputFilter chunkFilter
 				<Item Name="NetComm_UsageReport_report.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_report.vi"/>
 				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
-				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
@@ -718,7 +724,6 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkTablesLV.dll" Type="Document" URL="FRC_NetworkTablesLV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
