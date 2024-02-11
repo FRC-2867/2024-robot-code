@@ -15,9 +15,11 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="TEST ATAN2 and joystick functions.vi" Type="VI" URL="../added/TEST ATAN2 and joystick functions.vi"/>
 		<Item Name="TEST optimize swerve.vi" Type="VI" URL="../TEST optimize swerve.vi"/>
+		<Item Name="TEST angle adjustments for front and field.vi" Type="VI" URL="../TEST angle adjustments for front and field.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
+				<Item Name="WPI_DriverStationAllianceInfo.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationAllianceInfo.ctl"/>
 			</Item>
 			<Item Name="Vector joystck.vi" Type="VI" URL="../added/Vector joystck.vi"/>
 			<Item Name="dead band filter.vi" Type="VI" URL="../added/dead band filter.vi"/>
@@ -25,6 +27,13 @@
 			<Item Name="calc rect to polar.vi" Type="VI" URL="../calc rect to polar.vi"/>
 			<Item Name="calc polar to rect.vi" Type="VI" URL="../calc polar to rect.vi"/>
 			<Item Name="optimize swerve.vi" Type="VI" URL="../optimize swerve.vi"/>
+			<Item Name="ctrl XY coord.ctl" Type="VI" URL="../ctrl defs/ctrl XY coord.ctl"/>
+			<Item Name="ctrl swerve module.ctl" Type="VI" URL="../ctrl defs/ctrl swerve module.ctl"/>
+			<Item Name="ctrl driver input.ctl" Type="VI" URL="../ctrl defs/ctrl driver input.ctl"/>
+			<Item Name="Global odometry.vi" Type="VI" URL="../Global odometry.vi"/>
+			<Item Name="ALTER HDG VECTOR.vi" Type="VI" URL="../ALTER HDG VECTOR.vi"/>
+			<Item Name="ctrl FRONT FACE selector.ctl" Type="VI" URL="../ctrl defs/ctrl FRONT FACE selector.ctl"/>
+			<Item Name="ctrl DRIVING FRAME selector.ctl" Type="VI" URL="../ctrl defs/ctrl DRIVING FRAME selector.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -39,6 +48,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">8</Property>
 		<Property Name="host.TargetOSID" Type="UInt">8</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.DoNotReboot" Type="Bool">true</Property>
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
@@ -113,6 +123,7 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="added" Type="Folder">
+				<Item Name="ALTER HDG VECTOR.vi" Type="VI" URL="../ALTER HDG VECTOR.vi"/>
 				<Item Name="ARMS - LOCK.vi" Type="VI" URL="../ARMS - LOCK.vi"/>
 				<Item Name="button press.vi" Type="VI" URL="../added/button press.vi"/>
 				<Item Name="dead band filter.vi" Type="VI" URL="../added/dead band filter.vi"/>
@@ -142,6 +153,8 @@ AddOutputFilter chunkFilter
 				<Item Name="ctrl swerve module.ctl" Type="VI" URL="../ctrl defs/ctrl swerve module.ctl"/>
 				<Item Name="ctrl swerve motor.ctl" Type="VI" URL="../ctrl defs/ctrl swerve motor.ctl"/>
 				<Item Name="ctrl XY coord.ctl" Type="VI" URL="../ctrl defs/ctrl XY coord.ctl"/>
+				<Item Name="ctrl FRONT FACE selector.ctl" Type="VI" URL="../ctrl defs/ctrl FRONT FACE selector.ctl"/>
+				<Item Name="ctrl DRIVING FRAME selector.ctl" Type="VI" URL="../ctrl defs/ctrl DRIVING FRAME selector.ctl"/>
 			</Item>
 			<Item Name="globals" Type="Folder">
 				<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
@@ -150,6 +163,8 @@ AddOutputFilter chunkFilter
 				<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			</Item>
 			<Item Name="Initialize" Type="Folder">
+				<Item Name="SET ALLIANCE.vi" Type="VI" URL="../SET ALLIANCE.vi"/>
+				<Item Name="SET MAG for Blue.vi" Type="VI" URL="../SET MAG for Blue.vi"/>
 				<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 				<Item Name="config CANcoder.vi" Type="VI" URL="../config CANcoder.vi"/>
 				<Item Name="config Spark Max.vi" Type="VI" URL="../config Spark Max.vi"/>
@@ -162,6 +177,7 @@ AddOutputFilter chunkFilter
 				<Item Name="INIT swerve.vi" Type="VI" URL="../INIT swerve.vi"/>
 			</Item>
 			<Item Name="swerve" Type="Folder">
+				<Item Name="SET FRONT FACE.vi" Type="VI" URL="../SET FRONT FACE.vi"/>
 				<Item Name="calc CG.vi" Type="VI" URL="../calc CG.vi"/>
 				<Item Name="calc mods from center.vi" Type="VI" URL="../calc mods from center.vi"/>
 				<Item Name="calc polar to rect.vi" Type="VI" URL="../calc polar to rect.vi"/>
@@ -173,6 +189,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Reverse Swerve.vi" Type="VI" URL="../added/Reverse Swerve.vi"/>
 				<Item Name="steer motor.vi" Type="VI" URL="../added/steer motor.vi"/>
 				<Item Name="TEST adjust Spark Max V PID.vi" Type="VI" URL="../TEST adjust Spark Max V PID.vi"/>
+				<Item Name="SET DRIVE FRAME.vi" Type="VI" URL="../SET DRIVE FRAME.vi"/>
 			</Item>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
@@ -842,6 +859,7 @@ AddOutputFilter chunkFilter
 			<Item Name="ntcoreffi.dll" Type="Document" URL="ntcoreffi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
