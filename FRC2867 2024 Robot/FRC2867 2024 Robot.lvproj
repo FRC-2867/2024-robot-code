@@ -16,6 +16,8 @@
 		<Item Name="TEST ATAN2 and joystick functions.vi" Type="VI" URL="../added/TEST ATAN2 and joystick functions.vi"/>
 		<Item Name="TEST optimize swerve.vi" Type="VI" URL="../TEST optimize swerve.vi"/>
 		<Item Name="TEST angle adjustments for front and field.vi" Type="VI" URL="../TEST angle adjustments for front and field.vi"/>
+		<Item Name="TEST rect and polar.vi" Type="VI" URL="../TEST rect and polar.vi"/>
+		<Item Name="TEST 2-dim swerve direction indicators.vi" Type="VI" URL="../TEST 2-dim swerve direction indicators.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
@@ -34,6 +36,7 @@
 			<Item Name="ALTER HDG VECTOR.vi" Type="VI" URL="../ALTER HDG VECTOR.vi"/>
 			<Item Name="ctrl FRONT FACE selector.ctl" Type="VI" URL="../ctrl defs/ctrl FRONT FACE selector.ctl"/>
 			<Item Name="ctrl DRIVING FRAME selector.ctl" Type="VI" URL="../ctrl defs/ctrl DRIVING FRAME selector.ctl"/>
+			<Item Name="ctrl LimeLight target.ctl" Type="VI" URL="../ctrl defs/ctrl LimeLight target.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -132,7 +135,11 @@ AddOutputFilter chunkFilter
 				<Item Name="RateLimiter.vi" Type="VI" URL="../added/RateLimiter.vi"/>
 				<Item Name="TEST ATAN2 and joystick functions.vi" Type="VI" URL="../added/TEST ATAN2 and joystick functions.vi"/>
 				<Item Name="Vector joystck.vi" Type="VI" URL="../added/Vector joystck.vi"/>
+				<Item Name="RUN ARM.vi" Type="VI" URL="../RUN ARM.vi"/>
+				<Item Name="RUN ARM SUB-SYS.vi" Type="VI" URL="../RUN ARM SUB-SYS.vi"/>
 				<Item Name="write driver inputs.vi" Type="VI" URL="../added/write driver inputs.vi"/>
+				<Item Name="GET ARM STATUS.vi" Type="VI" URL="../added/GET ARM STATUS.vi"/>
+				<Item Name="LimeLight targeting.vi" Type="VI" URL="../added/LimeLight targeting.vi"/>
 			</Item>
 			<Item Name="ctrl defs" Type="Folder">
 				<Item Name="ctrl arm motor.ctl" Type="VI" URL="../ctrl defs/ctrl arm motor.ctl"/>
@@ -177,6 +184,7 @@ AddOutputFilter chunkFilter
 				<Item Name="INIT swerve.vi" Type="VI" URL="../INIT swerve.vi"/>
 			</Item>
 			<Item Name="swerve" Type="Folder">
+				<Item Name="CONTROLLER.vi" Type="VI" URL="../CONTROLLER.vi"/>
 				<Item Name="SET FRONT FACE.vi" Type="VI" URL="../SET FRONT FACE.vi"/>
 				<Item Name="calc CG.vi" Type="VI" URL="../calc CG.vi"/>
 				<Item Name="calc mods from center.vi" Type="VI" URL="../calc mods from center.vi"/>
@@ -200,6 +208,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="ctrl LimeLight target.ctl" Type="VI" URL="../ctrl defs/ctrl LimeLight target.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -839,6 +848,8 @@ AddOutputFilter chunkFilter
 				<Item Name="Z900_navX_Util_EncodeProtocol_UnsignedHundredths.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Util/Encode Protocol/Z900_navX_Util_EncodeProtocol_UnsignedHundredths.vi"/>
 				<Item Name="Z900_navX_Util_LittleEndian_to_BigEndian.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Util/Z900_navX_Util_LittleEndian_to_BigEndian.vi"/>
 				<Item Name="Z900_navX_ZeroVectorTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/Z900_navX_ZeroVectorTypeDef.ctl"/>
+				<Item Name="SPARK Get Forward Limit Switch.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Get Forward Limit Switch.vi"/>
+				<Item Name="SPARK Get Reverse Limit Switch.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Get Reverse Limit Switch.vi"/>
 			</Item>
 			<Item Name="ctrl driver input.ctl" Type="VI" URL="../ctrl defs/ctrl driver input.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
@@ -859,7 +870,6 @@ AddOutputFilter chunkFilter
 			<Item Name="ntcoreffi.dll" Type="Document" URL="ntcoreffi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
