@@ -183,6 +183,11 @@ AddOutputFilter chunkFilter
 				<Item Name="LED STATUS.vi" Type="VI" URL="../LED STATUS.vi"/>
 				<Item Name="CALC GEAR RATIO SPEEDS.vi" Type="VI" URL="../added/CALC GEAR RATIO SPEEDS.vi"/>
 				<Item Name="config dual Spark Max.vi" Type="VI" URL="../config dual Spark Max.vi"/>
+				<Item Name="IMU STATUS.vi" Type="VI" URL="../added/IMU STATUS.vi"/>
+				<Item Name="WATCH for NOTE.vi" Type="VI" URL="../added/WATCH for NOTE.vi"/>
+				<Item Name="DRIVE ARRAY to 2x2 INDICATOR.vi" Type="VI" URL="../added/DRIVE ARRAY to 2x2 INDICATOR.vi"/>
+				<Item Name="EXECUTE SWERVE DRIVE.vi" Type="VI" URL="../added/EXECUTE SWERVE DRIVE.vi"/>
+				<Item Name="LIMELIGHT SET.vi" Type="VI" URL="../added/LIMELIGHT SET.vi"/>
 			</Item>
 			<Item Name="ctrl defs" Type="Folder">
 				<Item Name="ctrl arm motor.ctl" Type="VI" URL="../ctrl defs/ctrl arm motor.ctl"/>
@@ -238,6 +243,7 @@ AddOutputFilter chunkFilter
 				<Item Name="INIT LED.vi" Type="VI" URL="../INIT LED.vi"/>
 			</Item>
 			<Item Name="swerve" Type="Folder">
+				<Item Name="zero pos abs.vi" Type="VI" URL="../added/zero pos abs.vi"/>
 				<Item Name="CONTROLLER.vi" Type="VI" URL="../CONTROLLER.vi"/>
 				<Item Name="SET FRONT FACE.vi" Type="VI" URL="../SET FRONT FACE.vi"/>
 				<Item Name="calc CG.vi" Type="VI" URL="../calc CG.vi"/>
