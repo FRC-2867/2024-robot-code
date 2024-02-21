@@ -20,6 +20,7 @@
 		<Item Name="TEST 2-dim swerve direction indicators.vi" Type="VI" URL="../TEST 2-dim swerve direction indicators.vi"/>
 		<Item Name="TEST BUTTON PRESS.vi" Type="VI" URL="../added/TEST BUTTON PRESS.vi"/>
 		<Item Name="TEST MENU RING CONTROLS.vi" Type="VI" URL="../TEST MENU RING CONTROLS.vi"/>
+		<Item Name="TEST low-pass filter.vi" Type="VI" URL="../TEST low-pass filter.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
@@ -31,6 +32,7 @@
 				<Item Name="WPI_CompressorFeedbackMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Compressor/WPI_CompressorFeedbackMode.ctl"/>
 				<Item Name="Spark MAX Limit Switch Polarity.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/Typedef/Spark MAX Limit Switch Polarity.ctl"/>
 				<Item Name="Spark MAX Idle Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/Typedef/Spark MAX Idle Mode.ctl"/>
+				<Item Name="Spark MAX Smart Motion Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/Typedef/Spark MAX Smart Motion Parameters.ctl"/>
 			</Item>
 			<Item Name="Vector joystck.vi" Type="VI" URL="../added/Vector joystck.vi"/>
 			<Item Name="dead band filter.vi" Type="VI" URL="../added/dead band filter.vi"/>
@@ -260,6 +262,7 @@ AddOutputFilter chunkFilter
 				<Item Name="SET DRIVE FRAME.vi" Type="VI" URL="../SET DRIVE FRAME.vi"/>
 				<Item Name="SWERVE DRIVE.vi" Type="VI" URL="../added/SWERVE DRIVE.vi"/>
 				<Item Name="ALTER HDG VECTOR.vi" Type="VI" URL="../ALTER HDG VECTOR.vi"/>
+				<Item Name="ROTATION SELECT.vi" Type="VI" URL="../added/ROTATION SELECT.vi"/>
 			</Item>
 			<Item Name="TESTS" Type="Folder">
 				<Item Name="TEST DRIVE.vi" Type="VI" URL="../TEST DRIVE.vi"/>
@@ -275,6 +278,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -984,7 +988,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">15</Property>
+				<Property Name="Bld_version.build" Type="Int">22</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
