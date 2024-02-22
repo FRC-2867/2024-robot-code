@@ -71,6 +71,8 @@
 			<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
 			<Item Name="calc swerve modules.vi" Type="VI" URL="../calc swerve modules.vi"/>
 			<Item Name="ctrl pivot select.ctl" Type="VI" URL="../ctrl defs/ctrl pivot select.ctl"/>
+			<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
+			<Item Name="ctrl motor PIDF coefficients.ctl" Type="VI" URL="../ctrl defs/ctrl motor PIDF coefficients.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -188,7 +190,6 @@ AddOutputFilter chunkFilter
 				<Item Name="IMU STATUS.vi" Type="VI" URL="../added/IMU STATUS.vi"/>
 				<Item Name="WATCH for NOTE.vi" Type="VI" URL="../added/WATCH for NOTE.vi"/>
 				<Item Name="DRIVE ARRAY to 2x2 INDICATOR.vi" Type="VI" URL="../added/DRIVE ARRAY to 2x2 INDICATOR.vi"/>
-				<Item Name="EXECUTE SWERVE DRIVE.vi" Type="VI" URL="../added/EXECUTE SWERVE DRIVE.vi"/>
 				<Item Name="LIMELIGHT SET.vi" Type="VI" URL="../added/LIMELIGHT SET.vi"/>
 			</Item>
 			<Item Name="ctrl defs" Type="Folder">
@@ -222,6 +223,8 @@ AddOutputFilter chunkFilter
 				<Item Name="ctrl LED STATES.ctl" Type="VI" URL="../ctrl defs/ctrl LED STATES.ctl"/>
 				<Item Name="ctrl DEFINE GEAR.ctl" Type="VI" URL="../ctrl defs/ctrl DEFINE GEAR.ctl"/>
 				<Item Name="ctrl MOTOR SELECT.ctl" Type="VI" URL="../ctrl defs/ctrl MOTOR SELECT.ctl"/>
+				<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
+				<Item Name="ctrl motor PIDF coefficients.ctl" Type="VI" URL="../ctrl defs/ctrl motor PIDF coefficients.ctl"/>
 			</Item>
 			<Item Name="globals" Type="Folder">
 				<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
@@ -230,6 +233,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			</Item>
 			<Item Name="Initialize" Type="Folder">
+				<Item Name="CONFIG SPARK MAX PIDF.vi" Type="VI" URL="../CONFIG SPARK MAX PIDF.vi"/>
 				<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 				<Item Name="SET ALLIANCE.vi" Type="VI" URL="../SET ALLIANCE.vi"/>
 				<Item Name="SET MAG for Blue.vi" Type="VI" URL="../SET MAG for Blue.vi"/>
@@ -263,6 +267,7 @@ AddOutputFilter chunkFilter
 				<Item Name="SWERVE DRIVE.vi" Type="VI" URL="../added/SWERVE DRIVE.vi"/>
 				<Item Name="ALTER HDG VECTOR.vi" Type="VI" URL="../ALTER HDG VECTOR.vi"/>
 				<Item Name="ROTATION SELECT.vi" Type="VI" URL="../added/ROTATION SELECT.vi"/>
+				<Item Name="EXECUTE SWERVE DRIVE.vi" Type="VI" URL="../added/EXECUTE SWERVE DRIVE.vi"/>
 			</Item>
 			<Item Name="TESTS" Type="Folder">
 				<Item Name="TEST DRIVE.vi" Type="VI" URL="../TEST DRIVE.vi"/>
@@ -278,7 +283,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -950,6 +954,9 @@ AddOutputFilter chunkFilter
 				<Item Name="SPARK Get Motor Interface.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Get Motor Interface.vi"/>
 				<Item Name="SPARK Set Motor Type.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Motor Type.vi"/>
 				<Item Name="SPARK Set Soft Limit Config.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Soft Limit Config.vi"/>
+				<Item Name="SPARK Set Smart Motion Constraints.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Smart Motion Constraints.vi"/>
+				<Item Name="SPARK Set Smart Motion Min Output Velocity.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Smart Motion Min Output Velocity.vi"/>
+				<Item Name="SPARK Set Smart Motion Allowed Closed Loop Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Smart Motion Allowed Closed Loop Error.vi"/>
 			</Item>
 			<Item Name="ctrl driver input.ctl" Type="VI" URL="../ctrl defs/ctrl driver input.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
@@ -988,7 +995,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
