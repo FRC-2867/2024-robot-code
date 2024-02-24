@@ -17,7 +17,6 @@
 		<Item Name="TEST optimize swerve.vi" Type="VI" URL="../TEST optimize swerve.vi"/>
 		<Item Name="TEST angle adjustments for front and field.vi" Type="VI" URL="../TEST angle adjustments for front and field.vi"/>
 		<Item Name="TEST rect and polar.vi" Type="VI" URL="../TEST rect and polar.vi"/>
-		<Item Name="TEST 2-dim swerve direction indicators.vi" Type="VI" URL="../TEST 2-dim swerve direction indicators.vi"/>
 		<Item Name="TEST BUTTON PRESS.vi" Type="VI" URL="../added/TEST BUTTON PRESS.vi"/>
 		<Item Name="TEST MENU RING CONTROLS.vi" Type="VI" URL="../TEST MENU RING CONTROLS.vi"/>
 		<Item Name="TEST low-pass filter.vi" Type="VI" URL="../TEST low-pass filter.vi"/>
@@ -189,7 +188,6 @@ AddOutputFilter chunkFilter
 				<Item Name="config dual Spark Max.vi" Type="VI" URL="../config dual Spark Max.vi"/>
 				<Item Name="IMU STATUS.vi" Type="VI" URL="../added/IMU STATUS.vi"/>
 				<Item Name="WATCH for NOTE.vi" Type="VI" URL="../added/WATCH for NOTE.vi"/>
-				<Item Name="DRIVE ARRAY to 2x2 INDICATOR.vi" Type="VI" URL="../added/DRIVE ARRAY to 2x2 INDICATOR.vi"/>
 				<Item Name="LIMELIGHT SET.vi" Type="VI" URL="../added/LIMELIGHT SET.vi"/>
 			</Item>
 			<Item Name="ctrl defs" Type="Folder">
@@ -233,10 +231,10 @@ AddOutputFilter chunkFilter
 				<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			</Item>
 			<Item Name="Initialize" Type="Folder">
-				<Item Name="CONFIG SPARK MAX PIDF.vi" Type="VI" URL="../CONFIG SPARK MAX PIDF.vi"/>
 				<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 				<Item Name="SET ALLIANCE.vi" Type="VI" URL="../SET ALLIANCE.vi"/>
 				<Item Name="SET MAG for Blue.vi" Type="VI" URL="../SET MAG for Blue.vi"/>
+				<Item Name="CONFIG SPARK MAX PIDF.vi" Type="VI" URL="../CONFIG SPARK MAX PIDF.vi"/>
 				<Item Name="config CANcoder.vi" Type="VI" URL="../config CANcoder.vi"/>
 				<Item Name="config Spark Max.vi" Type="VI" URL="../config Spark Max.vi"/>
 				<Item Name="get swerve refs.vi" Type="VI" URL="../get swerve refs.vi"/>
@@ -244,9 +242,9 @@ AddOutputFilter chunkFilter
 				<Item Name="INIT arms.vi" Type="VI" URL="../INIT arms.vi"/>
 				<Item Name="INIT controllers.vi" Type="VI" URL="../INIT controllers.vi"/>
 				<Item Name="INIT sensors.vi" Type="VI" URL="../INIT sensors.vi"/>
-				<Item Name="INIT shooter.vi" Type="VI" URL="../INIT shooter.vi"/>
 				<Item Name="INIT swerve.vi" Type="VI" URL="../INIT swerve.vi"/>
 				<Item Name="INIT LED.vi" Type="VI" URL="../INIT LED.vi"/>
+				<Item Name="INIT shooter.vi" Type="VI" URL="../INIT shooter.vi"/>
 			</Item>
 			<Item Name="swerve" Type="Folder">
 				<Item Name="zero pos abs.vi" Type="VI" URL="../added/zero pos abs.vi"/>
