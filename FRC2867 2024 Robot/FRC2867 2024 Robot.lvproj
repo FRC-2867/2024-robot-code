@@ -24,14 +24,6 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
 				<Item Name="WPI_DriverStationAllianceInfo.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationAllianceInfo.ctl"/>
-				<Item Name="FPGA_DIOPWMChannel.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/DIO/FPGA_DIOPWMChannel.ctl"/>
-				<Item Name="FPGA_DIOChannel.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/DIO/FPGA_DIOChannel.ctl"/>
-				<Item Name="WPI_SolenoidValue.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidValue.ctl"/>
-				<Item Name="WPI_SolenoidChannel.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidChannel.ctl"/>
-				<Item Name="WPI_CompressorFeedbackMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Compressor/WPI_CompressorFeedbackMode.ctl"/>
-				<Item Name="Spark MAX Limit Switch Polarity.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/Typedef/Spark MAX Limit Switch Polarity.ctl"/>
-				<Item Name="Spark MAX Idle Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/Typedef/Spark MAX Idle Mode.ctl"/>
-				<Item Name="Spark MAX Smart Motion Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/Typedef/Spark MAX Smart Motion Parameters.ctl"/>
 			</Item>
 			<Item Name="Vector joystck.vi" Type="VI" URL="../added/Vector joystck.vi"/>
 			<Item Name="dead band filter.vi" Type="VI" URL="../added/dead band filter.vi"/>
@@ -48,30 +40,12 @@
 			<Item Name="ctrl DRIVING FRAME selector.ctl" Type="VI" URL="../ctrl defs/ctrl DRIVING FRAME selector.ctl"/>
 			<Item Name="ctrl LimeLight target.ctl" Type="VI" URL="../ctrl defs/ctrl LimeLight target.ctl"/>
 			<Item Name="ctrl swerve speeds.ctl" Type="VI" URL="../ctrl defs/ctrl swerve speeds.ctl"/>
-			<Item Name="ctrl shooter speeds.ctl" Type="VI" URL="../ctrl defs/ctrl shooter speeds.ctl"/>
-			<Item Name="ctrl intake speeds.ctl" Type="VI" URL="../ctrl defs/ctrl intake speeds.ctl"/>
 			<Item Name="ctrl DRIVER MODE.ctl" Type="VI" URL="../ctrl defs/ctrl DRIVER MODE.ctl"/>
 			<Item Name="button press.vi" Type="VI" URL="../added/button press.vi"/>
 			<Item Name="joystick arc to vector.vi" Type="VI" URL="../added/joystick arc to vector.vi"/>
-			<Item Name="ctrl DEFINE GEAR.ctl" Type="VI" URL="../ctrl defs/ctrl DEFINE GEAR.ctl"/>
-			<Item Name="ctrl LED init.ctl" Type="VI" URL="../ctrl defs/ctrl LED init.ctl"/>
-			<Item Name="ctrl DIO.ctl" Type="VI" URL="../ctrl defs/ctrl DIO.ctl"/>
-			<Item Name="ctrl solenoid.ctl" Type="VI" URL="../ctrl defs/ctrl solenoid.ctl"/>
-			<Item Name="ctrl compressor config.ctl" Type="VI" URL="../ctrl defs/ctrl compressor config.ctl"/>
-			<Item Name="ctrl compressor begin.ctl" Type="VI" URL="../ctrl defs/ctrl compressor begin.ctl"/>
-			<Item Name="ctrl limit polarity.ctl" Type="VI" URL="../ctrl defs/ctrl limit polarity.ctl"/>
-			<Item Name="ctrl Spark MAX current limiting.ctl" Type="VI" URL="../ctrl defs/ctrl Spark MAX current limiting.ctl"/>
-			<Item Name="ctrl MOTOR SELECT.ctl" Type="VI" URL="../ctrl defs/ctrl MOTOR SELECT.ctl"/>
-			<Item Name="ctrl swerve motor.ctl" Type="VI" URL="../ctrl defs/ctrl swerve motor.ctl"/>
-			<Item Name="ctrl arm motor.ctl" Type="VI" URL="../ctrl defs/ctrl arm motor.ctl"/>
-			<Item Name="ctrl robot swerve dims.ctl" Type="VI" URL="../ctrl defs/ctrl robot swerve dims.ctl"/>
-			<Item Name="ctrl robot CG.ctl" Type="VI" URL="../ctrl defs/ctrl robot CG.ctl"/>
-			<Item Name="ctrl CANcoder.ctl" Type="VI" URL="../ctrl defs/ctrl CANcoder.ctl"/>
-			<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
 			<Item Name="calc swerve modules.vi" Type="VI" URL="../calc swerve modules.vi"/>
 			<Item Name="ctrl pivot select.ctl" Type="VI" URL="../ctrl defs/ctrl pivot select.ctl"/>
 			<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
-			<Item Name="ctrl motor PIDF coefficients.ctl" Type="VI" URL="../ctrl defs/ctrl motor PIDF coefficients.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -189,6 +163,7 @@ AddOutputFilter chunkFilter
 				<Item Name="IMU STATUS.vi" Type="VI" URL="../added/IMU STATUS.vi"/>
 				<Item Name="WATCH for NOTE.vi" Type="VI" URL="../added/WATCH for NOTE.vi"/>
 				<Item Name="LIMELIGHT SET.vi" Type="VI" URL="../added/LIMELIGHT SET.vi"/>
+				<Item Name="monitor INTAKE power curve.vi" Type="VI" URL="../monitor INTAKE power curve.vi"/>
 			</Item>
 			<Item Name="ctrl defs" Type="Folder">
 				<Item Name="ctrl arm motor.ctl" Type="VI" URL="../ctrl defs/ctrl arm motor.ctl"/>
@@ -223,6 +198,7 @@ AddOutputFilter chunkFilter
 				<Item Name="ctrl MOTOR SELECT.ctl" Type="VI" URL="../ctrl defs/ctrl MOTOR SELECT.ctl"/>
 				<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
 				<Item Name="ctrl motor PIDF coefficients.ctl" Type="VI" URL="../ctrl defs/ctrl motor PIDF coefficients.ctl"/>
+				<Item Name="ctrl ROTATION SELECT.ctl" Type="VI" URL="../ctrl defs/ctrl ROTATION SELECT.ctl"/>
 			</Item>
 			<Item Name="globals" Type="Folder">
 				<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
@@ -231,7 +207,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			</Item>
 			<Item Name="Initialize" Type="Folder">
-				<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 				<Item Name="SET ALLIANCE.vi" Type="VI" URL="../SET ALLIANCE.vi"/>
 				<Item Name="SET MAG for Blue.vi" Type="VI" URL="../SET MAG for Blue.vi"/>
 				<Item Name="CONFIG SPARK MAX PIDF.vi" Type="VI" URL="../CONFIG SPARK MAX PIDF.vi"/>
@@ -266,6 +241,9 @@ AddOutputFilter chunkFilter
 				<Item Name="ALTER HDG VECTOR.vi" Type="VI" URL="../ALTER HDG VECTOR.vi"/>
 				<Item Name="ROTATION SELECT.vi" Type="VI" URL="../added/ROTATION SELECT.vi"/>
 				<Item Name="EXECUTE SWERVE DRIVE.vi" Type="VI" URL="../added/EXECUTE SWERVE DRIVE.vi"/>
+				<Item Name="SWERVE DRIVE AUTO.vi" Type="VI" URL="../SWERVE DRIVE AUTO.vi"/>
+				<Item Name="SWERVE DRIVE one corner.vi" Type="VI" URL="../SWERVE DRIVE one corner.vi"/>
+				<Item Name="calc max motor speed.vi" Type="VI" URL="../calc max motor speed.vi"/>
 			</Item>
 			<Item Name="TESTS" Type="Folder">
 				<Item Name="TEST DRIVE.vi" Type="VI" URL="../TEST DRIVE.vi"/>
@@ -273,6 +251,7 @@ AddOutputFilter chunkFilter
 				<Item Name="TEST INTAKE-SHOOTER.vi" Type="VI" URL="../TEST INTAKE-SHOOTER.vi"/>
 			</Item>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
+			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
 			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
 			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
