@@ -46,6 +46,7 @@
 			<Item Name="calc swerve modules.vi" Type="VI" URL="../calc swerve modules.vi"/>
 			<Item Name="ctrl pivot select.ctl" Type="VI" URL="../ctrl defs/ctrl pivot select.ctl"/>
 			<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
+			<Item Name="ctrl ROTATION SELECT.ctl" Type="VI" URL="../ctrl defs/ctrl ROTATION SELECT.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -260,6 +261,10 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="ctrl AUTONOMOUS drive step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS drive step control.ctl"/>
+		<Item Name="ctrl AUTONOMOUS systems step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS systems step control.ctl"/>
+		<Item Name="ctrl AUTONOMOUS step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS step control.ctl"/>
+		<Item Name="ctrl AUTO STATES.ctl" Type="VI" URL="../ctrl defs/ctrl AUTO STATES.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
