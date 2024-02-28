@@ -200,6 +200,10 @@ AddOutputFilter chunkFilter
 				<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
 				<Item Name="ctrl motor PIDF coefficients.ctl" Type="VI" URL="../ctrl defs/ctrl motor PIDF coefficients.ctl"/>
 				<Item Name="ctrl ROTATION SELECT.ctl" Type="VI" URL="../ctrl defs/ctrl ROTATION SELECT.ctl"/>
+				<Item Name="ctrl AUTONOMOUS drive step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS drive step control.ctl"/>
+				<Item Name="ctrl AUTONOMOUS systems step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS systems step control.ctl"/>
+				<Item Name="ctrl AUTONOMOUS step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS step control.ctl"/>
+				<Item Name="ctrl AUTO STATES.ctl" Type="VI" URL="../ctrl defs/ctrl AUTO STATES.ctl"/>
 			</Item>
 			<Item Name="globals" Type="Folder">
 				<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
@@ -245,6 +249,8 @@ AddOutputFilter chunkFilter
 				<Item Name="SWERVE DRIVE AUTO.vi" Type="VI" URL="../SWERVE DRIVE AUTO.vi"/>
 				<Item Name="SWERVE DRIVE one corner.vi" Type="VI" URL="../SWERVE DRIVE one corner.vi"/>
 				<Item Name="calc max motor speed.vi" Type="VI" URL="../calc max motor speed.vi"/>
+				<Item Name="NavX Tester.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/NavX Tester.vi"/>
+				<Item Name="Get_Continuous_Angle.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/Get_Continuous_Angle.vi"/>
 			</Item>
 			<Item Name="TESTS" Type="Folder">
 				<Item Name="TEST DRIVE.vi" Type="VI" URL="../TEST DRIVE.vi"/>
@@ -261,10 +267,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="ctrl AUTONOMOUS drive step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS drive step control.ctl"/>
-		<Item Name="ctrl AUTONOMOUS systems step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS systems step control.ctl"/>
-		<Item Name="ctrl AUTONOMOUS step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS step control.ctl"/>
-		<Item Name="ctrl AUTO STATES.ctl" Type="VI" URL="../ctrl defs/ctrl AUTO STATES.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -939,6 +941,11 @@ AddOutputFilter chunkFilter
 				<Item Name="SPARK Set Smart Motion Constraints.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Smart Motion Constraints.vi"/>
 				<Item Name="SPARK Set Smart Motion Min Output Velocity.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Smart Motion Min Output Velocity.vi"/>
 				<Item Name="SPARK Set Smart Motion Allowed Closed Loop Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Smart Motion Allowed Closed Loop Error.vi"/>
+				<Item Name="Hault.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Set/Hault.vi"/>
+				<Item Name="FRIC_navX_TestStatesTypeDef_I2C.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_TypeDefs/FRIC_navX_TestStatesTypeDef_I2C.ctl"/>
+				<Item Name="Zero Velocity.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Set/Zero Velocity.vi"/>
+				<Item Name="Zero Displacement.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Set/Zero Displacement.vi"/>
+				<Item Name="Zero Yaw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Set/Zero Yaw.vi"/>
 			</Item>
 			<Item Name="ctrl driver input.ctl" Type="VI" URL="../ctrl defs/ctrl driver input.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
