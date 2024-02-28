@@ -20,6 +20,8 @@
 		<Item Name="TEST BUTTON PRESS.vi" Type="VI" URL="../added/TEST BUTTON PRESS.vi"/>
 		<Item Name="TEST MENU RING CONTROLS.vi" Type="VI" URL="../TEST MENU RING CONTROLS.vi"/>
 		<Item Name="TEST low-pass filter.vi" Type="VI" URL="../TEST low-pass filter.vi"/>
+		<Item Name="TEST Blinkin LED selector.vi" Type="VI" URL="../TEST Blinkin LED selector.vi"/>
+		<Item Name="convert LED selection to values.vi" Type="VI" URL="../convert LED selection to values.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
@@ -47,6 +49,7 @@
 			<Item Name="ctrl pivot select.ctl" Type="VI" URL="../ctrl defs/ctrl pivot select.ctl"/>
 			<Item Name="ctrl PARKING constants.ctl" Type="VI" URL="../ctrl defs/ctrl PARKING constants.ctl"/>
 			<Item Name="ctrl ROTATION SELECT.ctl" Type="VI" URL="../ctrl defs/ctrl ROTATION SELECT.ctl"/>
+			<Item Name="ctrl LED PATTERNS.ctl" Type="VI" URL="../ctrl defs/ctrl LED PATTERNS.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -204,6 +207,7 @@ AddOutputFilter chunkFilter
 				<Item Name="ctrl AUTONOMOUS systems step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS systems step control.ctl"/>
 				<Item Name="ctrl AUTONOMOUS step control.ctl" Type="VI" URL="../ctrl defs/ctrl AUTONOMOUS step control.ctl"/>
 				<Item Name="ctrl AUTO STATES.ctl" Type="VI" URL="../ctrl defs/ctrl AUTO STATES.ctl"/>
+				<Item Name="ctrl LED PATTERNS.ctl" Type="VI" URL="../ctrl defs/ctrl LED PATTERNS.ctl"/>
 			</Item>
 			<Item Name="globals" Type="Folder">
 				<Item Name="Global INIT.vi" Type="VI" URL="../Global INIT.vi"/>
@@ -946,6 +950,9 @@ AddOutputFilter chunkFilter
 				<Item Name="Zero Velocity.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Set/Zero Velocity.vi"/>
 				<Item Name="Zero Displacement.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Set/Zero Displacement.vi"/>
 				<Item Name="Zero Yaw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Set/Zero Yaw.vi"/>
+				<Item Name="WPI_CAN_PDHSend.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/PDH/WPI_CAN_PDHSend.vi"/>
+				<Item Name="WPI_CAN_PDPSend.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/PDP/WPI_CAN_PDPSend.vi"/>
+				<Item Name="WPI_Power Get PD Faults.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Power/WPI_Power Get PD Faults.vi"/>
 			</Item>
 			<Item Name="ctrl driver input.ctl" Type="VI" URL="../ctrl defs/ctrl driver input.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
@@ -966,6 +973,7 @@ AddOutputFilter chunkFilter
 			<Item Name="ntcoreffi.dll" Type="Document" URL="ntcoreffi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="convert LED selection to values.vi" Type="VI" URL="../convert LED selection to values.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
